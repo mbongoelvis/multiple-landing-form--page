@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: ubuntu;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(229, 24%, 87%);
+}
+.main{
+    min-width: 40vw;
+    min-height: 30rem;
+    padding: 15px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 20px;
+}
+.first-sec{
+    width: 13rem;
+    min-height: 60%;
+    border-radius: 10px;
+    background-image: url("images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.step1, .step2, .step3, .step4{
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+}
+.step2 {
+    margin: 10px 0px;
+}
+.next1{
+    margin-top: 3rem;
+}
+.one,
+.two,
+.three,
+.four {
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(217, 100%, 97%);
+    border-radius: 50%;
+    margin-right: 15px;
+    color: hsl(217, 100%, 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    background-color: hsl(229, 24%, 87%);
+    color: black;
+    font-weight: 700;
+}
+
+.para span {
+    color: hsl(217, 100%, 97%);
+    font-weight: 700;
+    font-size: .9rem
+}
+
+.para p {
+    color: hsl(231, 11%, 63%);
+    font-size: .7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* first section */
+.second-sec1{
+    min-height: 40vh;
+    min-width: 4rem;
+    border-radius: 20px ;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+.sec1{
+    display: block;
+}
+.forms{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem
+}
+.second-sec1 h1{
+    font-size: 2.5rem;
+    margin-bottom: 9px;
+    color: hsl(213, 96%, 18%);
+}
+.second-sec1 p{
+    color: hsl(231, 11%, 63%);
+    font-size: .9rem;
+    color: hsl(213, 96%, 18%);
+}
+.second-sec1 input{
+    min-width: 90%;
+    height: 2.6rem;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 11%, 63%);
+    outline: none;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    font-size: 1rem;
+}
+input::placeholder{
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.second-sec1 label{
+    margin-bottom: 5px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.sec1 button{
+    width: 8rem;
+    height: 45px;
+    color: hsl(229, 38%, 94%);
+    font-weight: 700;
+    border: none;
+    font-size: 1rem;
+    margin-left: 17rem;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    cursor: pointer;
+}
+.forms span{
+    color: red;
+    display: none;
+}
+.phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*second form*/
+.sec2{
+    min-width: 25vw;
+    min-height: 100%;
+    flex-direction: column;
+    display: none;
+    padding-left: 3rem;
+    justify-content: space-between;
+}
+.cards {
+    display: flex;
+    width: 420px;
+    padding: 0;
+    margin-top: -5rem;
+    justify-content: space-between;
+}
+.next-back{
+    width: 420px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.card-button{
+    width: 420px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: hsl(229, 24%, 87%);
+    border-radius: 10px;
+}
+.back, .next{
+    width: 8rem;
+    height: 45px;
+    color: hsl(231, 10%, 86%);
+    font-weight: 700;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    cursor: pointer;
+}
+.selections{
+    width: 45px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    background: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+.selections span{
+    width: 40%;
+    height: 90%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1.4px 2px;
+    transition: transform 0.5s ease-in-out;
+}
+.first-card, .second-card, .third-card {
+    width: 100px;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border: 1px solid hsl(229, 24%, 87%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border .4s ease-in;
+}
+.first-card:hover,
+.second-card:hover,
+.third-card:hover{
+    border: 1px solid hsl(213, 96%, 18%);
+}
+.move span{
+    transform: translateX(24px);   
+}
+.add{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.month{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.cards span{
+    font-size: .8rem;
+    color: hsl(220, 4%, 70%);
+}
+.text-info p{
+   margin-top: 10px;
+   margin-bottom: 20px;
+    color: hsl(220, 4%, 70%);
+}
+.cards img{
+    width: 40px;
+    height: 40px;
+}
+.cards p{
+    font-weight: 700;
+    width: 90%;
+    color: hsl(213, 96%, 18%);
+}
+.back{
+    background: transparent;
+}
+.back:hover{
+    color: hsl(220, 1%, 49%) ;
+}
+.card-sec{
+    width: 70%;
+}
+
+
+/* third form */
+.sec3{
+    min-width: 25vw;
+    min-height: 100%;
+    flex-direction: column;
+    display: none;
+    padding-left: 3rem;
+    justify-content: space-between;
+}
+.addons-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 420px;
+    height: 300px;
+}
+.sec3 input{
+    height: 15px;
+    min-width: 15px;
+    accent-color: blue;
+    margin: 0;
+    padding: 0;
+}
+.add-ons1, .add-ons2, .add-ons3{
+    display: flex;
+    width: 100%;
+    min-height: 20%;
+    border-radius: 10px;
+    padding-inline: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hsl(229, 24%, 87%);
+    color: blue;
+}
+.check{
+   width: 80%; 
+   display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.check span{
+    font-size: .9rem;
+    color: hsl(220, 4%, 70%)
+}
+.check p{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+/* fourth form */
+.sec4{
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contain{
+    min-height: 30%;
+    margin-top: -6rem;
+    background-color: hsl(229, 100%, 96%);
+    border-radius: 10px;
+}
+.arcade{
+    width: 90%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.arcade p:last-child, .total span{
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+}
+.total p{
+    color: hsl(220, 4%, 70%);
+}
+.online-sec{
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+}
+.online-sec p{
+    color: hsl(225, 2%, 66%);
+}
+.online-sec span{
+    color: hsl(213, 96%, 18%);
+}
+hr{
+    width: 90%;
+    margin-left: 20px;
+    color: rgb(243, 243, 243);
+    opacity: .3;
+}
+.acade-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.on-sec, .store-sec{
+    display: flex;
+    padding-top: 9px;
+    padding-inline: 17px;
+    justify-content: space-between;
+}
+.total{
+    margin-top: -7rem;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    width: 95%;
+}
+.confirm{
+    display: none;
+    transform: translateY(50%);
+}
+.confirm img{
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+}
+.confirm h2{
+    text-align: center;
+}
+.confirm p{
+    width: 400px;
+    text-align: center;
+    color: rgb(162, 156, 156);
+    margin-top: 20px;
+}
+
+/*media querries*/
+@media (max-width:1595px) {
+    .second-sec1 {
+        padding-inline: 2.5rem;
+    }
+}
+@media (max-width: 749px){
+    .main{
+        width: 65vw;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 10rem;
+    }
+    .first-sec{
+        width: 61.5vw;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        background-image: url(images/bg-sidebar-mobile.svg);
+    }
+    .sec1{
+        width: 45vw;
+    }
+    .first-sec span, p{
+        display: none;
+    }
+    .second-sec1{
+        position: absolute;
+        background-color: white;
+        top: 6.5rem;
+        width: 54.5vw;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .one, .two, .three, .four{
+        margin-top: -15px;
+    }
+    .card-sec{
+        width: 100%;
+    }
+    .sec2, .sec3, .sec4{
+        width: 55vw;
+        padding-left: 0;
+        margin-left: -10px;
+        height: 470px
+    }
+    .add-ons3, .add-ons2, .add-ons1{
+        width: 50vw;
+    }
+    .card-button{
+        width: 55vw;
+    }
+    .next-back{
+        width: 53.4vw;
+    }
+    .cards{
+       width: 53.4vw;
+        padding: 0;
+    }
+    .first-card, .second-card, .third-card{
+        width: 80px;
+        height: 120px;
+    }
+    .confirm p{
+        display: block;
+        width: 50vw;
+    }
+}
